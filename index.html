@@ -4,90 +4,116 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Healthy Living</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
+      font-family: 'Rubik', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f9f9;
+      background: #f0f9f8;
       color: #333;
     }
-
-    header {
+    nav {
       background-color: #2b7a78;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      background-color: #3aafa9;
+      color: white;
+    }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.8em;
     }
-
     .main-image {
       width: 100%;
-      max-height: 300px;
+      height: 300px;
       object-fit: cover;
     }
-
     .container {
-      max-width: 800px;
+      max-width: 960px;
       margin: auto;
-      padding: 20px;
+      padding: 30px 20px;
     }
-
     section {
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
-
     h2 {
-      color: #3aafa9;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
+      color: #2b7a78;
       margin-bottom: 15px;
+      border-left: 4px solid #3aafa9;
+      padding-left: 10px;
     }
-
     ul {
       padding-left: 20px;
     }
-
     li {
       margin-bottom: 10px;
     }
-
+    .section-img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
     footer {
       text-align: center;
       padding: 20px;
       background-color: #def2f1;
-      color: #444;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#snacks">Snacks</a>
+    <a href="#tips">Tips</a>
+  </nav>
+
+  <header id="home">
     <h1>Healthy Living</h1>
     <p>Your daily dose of wellness, nutrition & balance</p>
   </header>
 
-  <img
-    src="https://images.unsplash.com/photo-1603048299530-198dc8f3ae0d"
-    alt="Healthy Food"
-    class="main-image"
-  />
+  <img src="https://images.unsplash.com/photo-1603048299530-198dc8f3ae0d" alt="Healthy Food" class="main-image" />
 
   <div class="container">
 
-    <section>
+    <section id="benefits">
       <h2>Why Choose a Healthy Lifestyle?</h2>
+      <img src="https://images.unsplash.com/photo-1606914469537-4f76354005ad" alt="Lifestyle" class="section-img" />
       <p>
-        Healthy living is not just about eating salads or going to the gym—it's about making conscious, everyday choices that enhance your energy, focus, and long-term well-being. Start small, stay consistent, and celebrate every positive step!
+        Healthy living is not just about eating salads or going to the gym—it's about making conscious, everyday choices that enhance your energy, focus, and long-term well-being.
       </p>
     </section>
 
     <section>
       <h2>Top Benefits of Millets</h2>
+      <img src="https://images.unsplash.com/photo-1617627144322-91f47f00a0c1" alt="Millets" class="section-img" />
       <ul>
         <li>Rich in fiber and aids digestion</li>
         <li>Helps control blood sugar levels</li>
@@ -97,30 +123,32 @@
       </ul>
     </section>
 
-    <section>
+    <section id="snacks">
       <h2>Healthy Snack Ideas</h2>
+      <img src="https://images.unsplash.com/photo-1601050690082-35fc20d49de1" alt="Snacks" class="section-img" />
       <ul>
-        <li><strong>Ragi Laddoo:</strong> Made with finger millet, jaggery, and ghee</li>
-        <li><strong>Millet Upma:</strong> Nutritious breakfast with veggies</li>
-        <li><strong>Sprouted Moong Salad:</strong> High-protein and refreshing</li>
-        <li><strong>Jowar Roti:</strong> Pair with vegetable curry or dal</li>
+        <li><strong>Ragi Laddoo:</strong> Finger millet, jaggery & ghee</li>
+        <li><strong>Millet Upma:</strong> Wholesome breakfast with veggies</li>
+        <li><strong>Sprouted Moong Salad:</strong> Fresh and protein-rich</li>
+        <li><strong>Jowar Roti:</strong> Pair with dal or curry</li>
       </ul>
     </section>
 
-    <section>
+    <section id="tips">
       <h2>Quick Wellness Tips</h2>
+      <img src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a" alt="Tips" class="section-img" />
       <ul>
-        <li>Drink 2–3 liters of water every day</li>
+        <li>Drink 2–3 liters of water daily</li>
         <li>Stretch or walk for 10 mins every 2 hours</li>
-        <li>Sleep at least 7 hours daily</li>
-        <li>Replace white sugar with jaggery or dates</li>
-        <li>Practice 5 minutes of breathing or meditation daily</li>
+        <li>Sleep at least 7 hours per night</li>
+        <li>Replace sugar with jaggery or dates</li>
+        <li>Practice 5 minutes of deep breathing daily</li>
       </ul>
     </section>
   </div>
 
   <footer>
-    &copy; 2025 Healthy Living • Made with 💚 for your wellness
+    &copy; 2025 Healthy Living • Stay positive. Eat well. Be active. 💚
   </footer>
 
 </body>
